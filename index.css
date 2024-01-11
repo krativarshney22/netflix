@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    width: 100%;
+    height: 710px;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/00103100-5b45-4d4f-af32-342649f1bda5/64774cd8-5c3a-4823-a0bb-1610d6971bd4/IN-en-20230821-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+
+}
+.opacity{
+    background: rgb(0 0 0 / 40%);
+    width: 100%;
+    height: 710px;
+}
+.gradient{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    width: 100%;
+    height: 710px;
+}
+.heade{
+    width: 100%;
+    height: 100px;
+    /* padding: 20px; */
+    /* background-color: black; */
+}
+.col1{
+    width: 50%;
+    padding-left: 180px;
+    padding-top: 20px;
+    /* background-color: white; */
+    float: left;
+}
+select{
+    width: 180px;
+    height: 40px; 
+    position: relative;
+    background-color: black;
+    color: aliceblue; 
+    border-radius: 8px;
+    font-size: medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.b1 {
+    height: 40px; 
+    width:100px; 
+    border-radius: 8px;
+    background-color: red; 
+    color: aliceblue;
+    font-size: medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.headings{
+    align-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+input{
+    width: 400px;
+    height: 60px;
+    color: aliceblue;
+    background-color: black;
+    font-size: large;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.b2{
+    background-color: red;
+    color: aliceblue;
+    width: 160px;
+    height: 60px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.grey{
+    background-color: rgb(53, 51, 51);
+    width: 100%;
+    height: 8px;
+}
+.third{
+    background-color: black;
+    color:aliceblue;
+    height: 550px;
+    width: 100%;
+}
+.a{
+    color:aliceblue;
+    font-family:cursive;
+    padding-left: 130px;
+    float: left;
+}
+.b{
+    font-size:xxx-large;
+    padding-top: 150px;
+}
+.imgcls{
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    padding-top: 50px;
+}
+.c{
+    color: aliceblue;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 100px;
+    float: left;
+    padding-top: 25px;
+}
+/* footer{
+    height: 450px;
+} */
+.fi-tr-language{
+    font-size: 30px;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 50px;
+    color:#fff;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .mail-sign{
+    max-width:600px ;
+    margin: 20px auto 60px;
+
+}
+.faq small{
+    font-size: 13px;
+}
+.footer{
+    padding: 50px 15% 10px ;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .coll{
+    flex: 25%;
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* display: flex; */
+}
+.footer .coll a{
+    display: inline-block;
+    text-decoration:underline;
+    color: #777;
+    padding-right: 40px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    /* justify-content: space-between; */
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .lang-btn{
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: black;
+}
+.Copy{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width:600px) {
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .lang-btn{
+        padding: 4px 8px;
+    }
+    .header-con{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-con h1{
+        font-size: 30px;
+    }
+    .mail-sign button{
+        /* background-color: red; */
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .col,.imgcol{
+        flex-basis: 100%;
+
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordian .content{
+        font-size:14px;
+    }
+    .accordian li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+}
